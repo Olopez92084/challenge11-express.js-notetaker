@@ -13,7 +13,7 @@ router.get("/notes", (req, res) => {console.log({ data });
 // get one specific note, req.body.id, readfile db.json, find entry that matches that id
 router.delete("/notes/:id", (req, res) => {
     data = data.filter((el) => el.id !== req.params.id);
-    
+
   fs.writeFile(
     path.join(__dirname, "../../db/db.json"),
     JSON.stringify(data),
@@ -23,6 +23,7 @@ router.delete("/notes/:id", (req, res) => {
       res.json(data);}
   );
 });
+
 
 // POST /api/notes
 //   create new UUID, take note out of req.body, apply UUID, save to db.json
