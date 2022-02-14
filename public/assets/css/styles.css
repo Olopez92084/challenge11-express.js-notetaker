@@ -49,7 +49,9 @@ html, body {
   padding-left: 0;
 }
 
-.list-container .list-group, .list-container .list-group-item:first-child, .list-container .card {
+.list-container .list-group, 
+.list-container .list-group-item:first-child, 
+.list-container .card {
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -66,3 +68,5 @@ html, body {
   padding: 20px;
   cursor: pointer;
 }
+
+
